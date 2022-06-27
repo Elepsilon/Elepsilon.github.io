@@ -248,16 +248,3 @@ div.horizontal_card > img {
     font-size: 14px;
     color: #21243D;
 }
-
-
-
-
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-@keyframes expand {
-    0% { width: 0px; }
-    100% { width: 585px; }
-}
