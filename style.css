@@ -1,0 +1,263 @@
+body {
+    font-family: 'Heebo', sans-serif;
+    font-weight: 400;
+    padding-bottom: 5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* navbar styles start */
+a.navbar_links {
+    color: black;
+    font-size: 20px;
+}
+
+#navbar_div {
+    display: none;
+    justify-content: flex-end;
+    column-gap: 20px;
+    padding: 10px 40px;
+    font-weight: 500;
+}
+/* navbar styles end */
+
+
+/* backdrop styles start */
+#backdrop {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    column-gap: 25px;
+    padding: 0 8%;
+    margin-top: 7%;
+    text-align: center;
+}
+/* backdrop styles end */
+
+@media screen and (min-width:500px) {
+    #backdrop {
+        flex-direction: row;s
+    }
+    
+    #backdrop_left_col {
+        width: 50% !important;
+    }
+
+    img.my_picture {
+        width: 325px !important;
+    }
+
+    #backdrop_right_col {
+        width: 45% !important;
+        text-align: center;
+    }
+
+    #navbar_div {
+        display: flex;
+    }
+
+    #backdrop {
+        text-align: left;
+    }
+
+    #backdrop_left_col > h1 {
+        font-weight: 700;
+        font-size: 44px !important;
+    }
+
+    #backdrop_left_col > p {
+        font-size: 16px !important;
+        padding: 0 0px !important;
+    }
+}
+
+/* backdrop_left_col styles start */
+#backdrop_left_col {
+    width: 100%;
+    color: #21243d;
+}
+
+#backdrop_left_col > h1 {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+#backdrop_left_col > p {
+    font-weight: 400;
+    font-size: 12px;
+    padding: 0 7px;
+}
+
+#backdrop_left_col_button{
+    background-color: #27ae60;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 5px;
+}
+
+/* backdrop_left_col styles end */
+
+
+/* backdrop_right_col styles start */
+#backdrop_right_col {
+    width: 100%;
+    text-align: center;
+}
+
+img.my_picture {
+    width: 200px;
+}
+/* backdrop_right_col styles end */
+
+
+
+/* recent blog posts styles end */
+#recent_blog_posts_section {
+    background-color: #edf7fa;
+    padding: 5% 2%;
+    margin-top: 1.5%;
+}
+
+#recent_posts_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#recent_posts_header > h4 {
+    font-weight: 400;
+    font-size: 22px;
+    color: #21243D;
+    margin: 0;
+}
+
+div.card {
+    color: #21243D;
+    font-weight: 400;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px 22px;
+}
+
+.heading_h2 {
+    color: #21243D;
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div.card > span {
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+div.card > p {
+    font-size: 16px;
+}
+
+#card_container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+/* recent blog posts styles end */
+
+@media screen and (min-width:500px) {
+    #card_container {
+        flex-direction: row !important;
+        column-gap: 30px !important;
+    }
+
+    #recent_blog_posts_section {
+        padding: 1.5% 8% !important;
+    }
+
+    div.horizontal_card {
+        flex-direction: row !important;
+        column-gap: 3% !important;
+    }
+
+    #featured_works_section {
+        padding: 1.5% 8% !important;
+    }
+}
+
+/* featured works styles starts */
+#featured_works_section {
+    background-color: white;
+    padding: 5% 8%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+div.horizontal_card {
+    display: flex;
+    flex-direction: column;
+    column-gap: 20px;
+}
+
+span.pill {
+    background-color: #142850;
+    padding: 1.5px 15px;
+    color: white;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+span.feature_text {
+    color: #8695A4;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+div.horizontal_card > div > p {
+    color: #21243D;
+    font-size: 16px;
+}
+
+div.horizontal_card > img {
+    border-radius: 10px;
+}
+/* featured works styles end */
+
+/* socials styles start */
+#socials {
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+    column-gap: 15px;
+    justify-content: center;
+    align-items: baseline;
+}
+
+#socials > a {
+    color:#142850;
+}
+/* socials styles end */
+
+#copyright_line {
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    color: #21243D;
+}
+
+
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes expand {
+    0% { width: 0px; }
+    100% { width: 585px; }
+}
