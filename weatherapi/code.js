@@ -8,7 +8,7 @@ $(document).ready(()=>{
             $("#icon-image").attr("src", response.current.condition.icon);
             $("#condition").text("Condition: " + response.current.condition.text)
             $("#humidity").text("Humidity: " + response.current.humidity)
-            $("#wind").text("Wind Speed: " + response.current.wind_kph)
+            $("#wind").text("Wind Speed: " + response.current.wind_kph + " Km/h")
         })
     }
 
